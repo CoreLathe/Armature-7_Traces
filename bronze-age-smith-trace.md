@@ -116,7 +116,7 @@ Incommensurability — a smith arrives with an alloy grade that has no equivalen
 
 The full protocol synthesized:
 
-```
+
               THE PROTOCOL OF CONCORDANCE                        
          Alloy Standardization at Seasonal Tin Markets           
 
@@ -210,7 +210,7 @@ The full protocol synthesized:
   │                verification against multiple partners.  │    
   └─────────────────────────────────────────────────────────┘    
 
-```
+
 
 ---
 
