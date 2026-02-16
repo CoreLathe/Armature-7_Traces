@@ -1,4 +1,4 @@
-**Sinterform Cognitive Traces**
+# Sinterform Cognitive Traces
 
 Raw synthetic reasoning trajectories generated under adversarial constraints. These are not polished outputs— they are cognitive stress-tests captured in single-pass generation with explicit epistemic scaffolding.
 
