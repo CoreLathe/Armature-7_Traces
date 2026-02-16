@@ -9,7 +9,7 @@ Raw synthetic reasoning trajectories generated under adversarial constraints. Th
 3. Copy both contents into your LLM (Claude, GPT-5, Gemini, etc.)
 4. Ask: *"Evaluate this trace against the protocol"*
 
-**Generation Context**
+**Trace Generation Context**
 - **Mode:** Single-shot (1-shot), no retries
 - **Scaffolding:** Advanced System 2 architecture (recursive verification, reflection markers)
 - **Post-Processing:** Raw protocol output translated to prose (non-generative formatting)
