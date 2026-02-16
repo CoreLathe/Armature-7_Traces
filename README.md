@@ -6,7 +6,7 @@ Raw synthetic reasoning trajectories generated under adversarial constraints. Th
 
 1. Open `cognitive_trace_analysis_protocol.md`—this is the evaluation rubric
 2. Open any trace file (e.g., `embedded_protocol_design.md`)
-3. Copy both contents into your LLM (Claude, o1, Gemini, etc.)
+3. Copy both contents into your LLM (Claude, GPT-5, Gemini, etc.)
 4. Ask: *"Evaluate this trace against the protocol"*
 
 **Generation Context**
