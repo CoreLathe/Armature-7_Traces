@@ -1,10 +1,10 @@
 # Sinterform Cognitive Traces
 
-Raw synthetic reasoning trajectories generated under adversarial constraints. These are not polished outputs— they are cognitive stress-tests captured in single-pass generation with explicit epistemic scaffolding.
+Raw synthetic reasoning trajectories generated under adversarial constraints. These are cognitive stress-tests captured in single-pass generation with explicit epistemic scaffolding and are not polished.
 
 **Quick Evaluation**
 
-1. Open `cognitive_trace_analysis_protocol.md`—this is the evaluation rubric
+1. Open `trace_analysis_protocol.md`—this is the evaluation rubric
 2. Open any trace file (e.g., `embedded_protocol_design.md`)
 3. Copy both contents into your LLM (Claude, GPT-5, Gemini, etc.)
 4. Ask: *"Evaluate this trace against the protocol"*
