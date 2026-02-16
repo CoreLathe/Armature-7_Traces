@@ -23,4 +23,4 @@ Constraint maintenance under memory pressure, negative capability (resistance to
 Website: www.corelathe.com  
 Email: nick@corelathe.com
 
-*For the reasoning architecture behind these traces, see [Corelathe]. This repo is diagnostic infrastructure—run your own analysis.*
+*This repo is diagnostic infrastructure—run your own analysis.*
