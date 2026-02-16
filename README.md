@@ -27,6 +27,7 @@ Raw synthetic reasoning trajectories generated under adversarial constraints. Th
 
 
 **Contact**
+
 Website: www.corelathe.com  
 Email: nick@corelathe.com
 
