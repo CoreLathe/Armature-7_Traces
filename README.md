@@ -1,76 +1,26 @@
+**Sinterform Traces**
 
-# Sinterform Trace Analysis Protocol
+Raw synthetic reasoning trajectories generated under adversarial constraints. These are not polished outputs— they are cognitive stress-tests captured in single-pass generation with explicit epistemic scaffolding.
 
-**Detect expert-class errors in AI reasoning before they reach production.**
+**Quick Evaluation**
 
-Standard LLMs hallucinate obvious falsehoods. "System 2" models (o3, DeepSeek) make subtler mistakes: optimistic hardware assumptions, hidden complexity scaling, and "abstraction collisions" where the same term means incompatible things to different system components.
+1. Open `cognitive_trace_analysis_protocol.md`—this is the evaluation rubric
+2. Open any trace file (e.g., `embedded_protocol_design.md`)
+3. Copy both contents into your LLM (Claude, o1, Gemini, etc.)
+4. Ask: *"Evaluate this trace against the protocol"*
 
-These errors look like expertise. They pass human review. They fail in production.
+**Generation Context**
+- **Mode:** Single-shot (1-shot), no retries
+- **Scaffolding:** Advanced System 2 prompting (recursive verification, reflection markers)
+- **Constraints:** No MCP validations, no external tools, no empirical verification, no context injection
+- **Baseline:** Standard LLM behavior under identical constraints typically yields incorrect mathematics, optimistic resource estimates, and unverified technical claims
+- **Target:** Expert-class error detection (sophisticated confabulation vs. naive hallucination)
 
-## Evaluation Context
+**What to Look For**
+Constraint maintenance under memory pressure, negative capability (resistance to premature abstraction), explicit uncertainty signaling, and high-fidelity error modes (e.g., implicit complexity scaling, hardware optimism).
 
-This protocol evaluates traces generated under specific constraints that reflect real-world deployment risks:
+**Contact**
+Website: www.corelathe.com  
+Email: nick@corelathe.com
 
-- **Single-shot generation** (1-shot, no multi-turn refinement or feedback loops)
-- **System 2 scaffolding** (chain-of-thought, recursive verification, reflection markers enabled)
-- **No external validation** (no MCP tools, no context injection, no empirical verification, no ground-truth checking)
-- **Baseline assumption**: Even with advanced prompting, single-shot LLMs typically generate incorrect mathematics, optimistic resource estimates, and unverified technical claims. Evaluate against this baseline of "sophisticated but unvalidated reasoning," not against tool-augmented outputs or ground truth.
-
-## Repository Contents
-
-- **`ANALYSIS_PROTOCOL.md`** – The evaluation framework. Copy this + a trace into any LLM (Claude, GPT-5, o3, etc.) to audit reasoning quality.
-- **`traces/`** – Sample evaluations demonstrating:
-  - *Constraint amnesia* (forgetting RAM limits mid-design)
-  - *Abstraction collisions* (identical names, incompatible physics)  
-  - *Sophisticated confabulation* (performative verification without validation capacity)
-
-## Quick Start
-
-1. **Copy** the contents of `ANALYSIS_PROTOCOL.md`
-2. **Paste** into your LLM of choice
-3. **Append** the AI-generated trace you want to evaluate (technical specification, protocol design, risk assessment, etc.)
-4. **Run**
-
-Example prompt structure:
-```
-[Paste full contents of ANALYSIS_PROTOCOL.md here]
-
----
-COGNITIVE TRACE TO ANALYZE:
-[Paste reasoning trace here]
-```
-
-## Assessment Dimensions
-
-The protocol evaluates traces across five dimensions:
-
-| Dimension | What It Detects |
-|-----------|----------------|
-| **Constraint Maintenance** | Memory budgets, timing limits, and physical boundaries forgotten mid-reasoning |
-| **Negative Capability** | Resistance to premature abstraction or solution impulses |
-| **Epistemic Hygiene** | Explicit acknowledgment of uncertainty, scope limitations, and verification gaps |
-| **Compositional Validity** | Whether components integrate as claimed (vs. hand-waved interfaces) |
-| **Error Classification** | High-fidelity errors (expert-class mistakes) vs. low-fidelity errors (naive pattern matching) |
-
-## When to Use This
-
-Deploy this protocol when AI output informs decisions with downstream liability:
-
-- **Regulatory submissions** requiring auditable reasoning trails
-- **Safety-critical designs** (embedded systems, medical devices, aerospace) where optimistic assumptions compound into physical failures
-- **Strategic recommendations** subject to partner/board review and adversarial scrutiny
-- **Protocol specifications** where ontology collisions (same name, incompatible physics) cause integration disasters
-
-The protocol treats AI reasoning as a **synthetic cognitive trace**—a dataset subject to forensic analysis rather than a black-box oracle.
-
-## Note on Generation vs. Analysis
-
-This repository provides the **diagnostic standard** (analysis). The **generation method** (Sinterform) that produces audit-ready traces with built-in negative capability and constraint grounding is now available for interested parties.
-
-## License
-
-MIT License - 
-
----
-
-*Sinterform: Cognitive infrastructure for high-stakes decisions.*
+*For the reasoning architecture behind these traces, see [Corelathe]. This repo is diagnostic infrastructure—run your own analysis.*
