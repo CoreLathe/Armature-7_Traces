@@ -1,4 +1,4 @@
-**Sinterform Cognitive Traces**
+# Sinterform Cognitive Traces
 
 We have trained models to perform confidence rather than cognition. These traces document reasoning under epistemic isolation: single-pass generation forced to validate its own steps without empirical grounding, external tooling, or retry loops.
 
