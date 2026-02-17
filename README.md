@@ -6,7 +6,7 @@ We have trained models to perform confidence rather than cognition. These traces
 
 1. Open `trace_analysis_protocol.md`
 2. Open any trace file (e.g., `embedded_protocol_trace.md`)
-3. Copy both into your LLM (Claude, GPT-4, Gemini, etc.)
+3. Copy both into your LLM (Claude, GPT-5, Gemini, etc.)
 4. Prompt: *"Evaluate this trace against the protocol"*
 
 **Generation Context**
