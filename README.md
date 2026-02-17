@@ -29,7 +29,7 @@ Assess epistemic suspension. Locate moments where the trace encounters contradic
 
 **Contact**
 
-Evaluate a trace. If Sinterform generated error modes surprise you, DM your domain for a custom generation.
+Evaluate a trace. If Sinterform generated error modes surprise you, contact me for a custom generation with the domain of your choice.
 
 Website: www.corelathe.com  
 Email: nick@corelathe.com
