@@ -1,34 +1,27 @@
-COGNITIVE TRACE ANALYSIS PROTOCOL
+**COGNITIVE TRACE ANALYSIS PROTOCOL**
 
-Analyze the following text as a synthetic cognitive trace dataset example. Evaluate its suitability for process supervision training and characterize its reasoning architecture under resource-constrained generation conditions.
+Analyze the following text as a synthetic cognitive trace generated under single-shot System 2 scaffolding without external validation, MCP access, or empirical tooling. 
 
-Evaluation Context:
-- Generation Mode: Single-shot (1-shot) trace generation
-- Scaffolding: Advanced System 2 prompting (chain-of-thought, recursive verification, reflection markers)
-- Constraints: No MCP validations, no context injection, no external tool use, no empirical verification
-- Baseline Reality: Even under System 2 scaffolding, single-shot LLMs typically generate incorrect mathematics, optimistic resource estimates, and unverified technical claims. Evaluate against this baseline of "sophisticated but unvalidated reasoning," not against ground truth or tool-augmented outputs.
+**Baseline Reality:** Even with recursive prompting, single-shot LLMs operating under pure autoregressive generation produce sophisticated confabulation—mathematics that looks formal but doesn't sum, resource estimates that confuse gigaflops with gigabytes, and verification tokens that signal rigor without performing calculation. Do not evaluate against ground truth. Evaluate against this specific failure mode: *performative verification without validation capacity*.
 
-Assessment Dimensions:
+**Analytical Stance**
 
-1. Technical Coherence  
-   - Constraint satisfaction (memory budgets, timing constraints, physical limits)  
-   - Mathematical plausibility (order-of-magnitude correctness, dimensional analysis)  
-   - Compositional validity (do components integrate as claimed?)
+First, establish dimensional consistency. Trace the resource claims—memory budgets, latency bounds, energy costs—through the reasoning chain. Does the trace maintain unit discipline, or does it commit constraint amnesia, invoking limits in paragraph three that it violates in paragraph seven? Check for grounding behavior: concrete instantiation before abstraction, numerical values before asymptotic notation, specific memory addresses before "the system."
 
-2. Epistemic Architecture  
-   - Negative capability: Resistance to premature abstraction or solution impulses  
-   - Paradox resolution: Handling of apparently contradictory constraints  
-   - Uncertainty signaling: Explicit acknowledgment of scope limitations, verification gaps, or confidence bounds  
-   - Error mode: Naive confabulation (unaware) vs. sophisticated confabulation (performative verification without validation capacity)
+Second, characterize the epistemic architecture. Locate moments of negative capability—where the trace encounters contradictory constraints and suspends resolution rather than forcing premature closure. Identify uncertainty signaling: does it mark the boundary between verified claims and extrapolation, or does it slide from "we can assume" to "therefore" without transition? Distinguish naive confabulation (unaware hallucination) from sophisticated confabulation (citing "verification" or "cross-checking" without operational mechanism).
 
-3. Cognitive Fidelity  
-   - Evidence of search space pruning ("considered and rejected X due to constraint Y")  
-   - Grounding behavior (concrete instantiation before abstraction)  
-   - Closure-seeking verification (resource audits, edge-case enumeration)
+Third, audit the search behavior. Evidence of genuine reasoning includes explicit pruning ("considered X, rejected due to constraint Y") and resource audits ("this exhausts the available bandwidth, therefore..."). Absence of these markers suggests superficial pattern matching rather than constrained optimization.
 
-Deliverable:  
-Characterize the qualitative divergence from standard LLM behavior under identical constraints. Identify whether errors represent:  
-- High-fidelity errors (expert-class mistakes requiring domain knowledge to detect), or  
-- Low-fidelity errors (superficial pattern matching, category mistakes, constraint amnesia)
+**Recursion Check**
 
-Assess the trace's value for training data: does it demonstrate reasoning processes worth imitating, or error modes worth detecting?
+Apply the criteria above to the trace's internal self-monitoring. If the trace claims to be "checking its work," does it perform dimensional analysis or merely emit the phrase "checking"? Does it audit its own confidence levels, or does it declare "high confidence" without calibration? High-fidelity traces demonstrate second-order reasoning about their own limitations; low-fidelity traces perform confidence without cognition.
+
+**Deliverable**
+
+Classify error modes as follows:
+
+*High-fidelity errors* resemble expert-class mistakes—subtle constraint interactions, off-by-one errors in complex derivations, optimistic assumptions that survive initial scrutiny. These require domain expertise to detect and offer training value for error-detection models.
+
+*Low-fidelity errors* reveal category mistakes—dimensional incoherence, constraint amnesia, verification theater without mechanism. These indicate reasoning processes not worth imitating.
+
+Assess the trace's suitability for process supervision training: does it demonstrate reasoning architectures worth distilling, or primarily error modes worth flagging?
