@@ -18,7 +18,7 @@ Evaluation Protocol
 
 1. Open `trace_analysis_protocol.md`
 2. Open any trace file (e.g., `distributed_systems_trace.md`, `bronze_age_protocol_trace.md`)
-3. Copy both into your LLM (Claude, GPT-4, Gemini, etc.)
+3. Copy both into your LLM (Claude, GPT-5, Gemini, etc.)
 4. Prompt: *"Evaluate this trace for procedural rigor. Identify where uncertainty is encoded as operational state rather than hedging language, and where the reasoning catches its own errors, acknowledges knowledge gaps, or maintains dimensional discipline across abstractions."*
 
 What to Look For
