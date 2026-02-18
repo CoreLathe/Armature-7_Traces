@@ -49,4 +49,5 @@ Seeking design partners working on process supervision or alignment who need tra
 Evaluate a trace. If the procedural rigor surprises you, reach out for a custom generation in your domain.
 
 Website: www.corelathe.com
+
 Email: nick@corelathe.com
