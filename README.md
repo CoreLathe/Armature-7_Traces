@@ -23,7 +23,7 @@ The trace detects its own anachronism, discards the current framing, and regroup
 1. Open `trace_analysis_protocol.md`
 2. Open any trace file
 3. Copy both into your LLM
-4. Prompt: *"Evaluate this trace for procedural rigor. Identify where uncertainty is encoded as operational state rather than hedging language, and where the reasoning catches its own errors, acknowledges knowledge gaps, or maintains dimensional discipline across abstractions."*
+4. Prompt: *"Evaluate this trace according to the protocol."*
 
 ## What to Look For
 
