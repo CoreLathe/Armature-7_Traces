@@ -1,35 +1,47 @@
-## Sinterform Cognitive Traces
+Sinterform: Cognitive Process Traces
 
-We have trained models to perform confidence rather than cognition. These traces document reasoning under epistemic isolation: single-pass generation forced to validate its own steps without empirical grounding, external tooling, or retry loops.
+Sinterform generates training data for cognitive process supervision from a **mature constraint architecture**. The traces you see are relaxed-mode compilations of procedural state machine executions. These represent expert-class reasoning captured as technical prose, generated through strict epistemic protocols rather than staged narration.
 
-**Quick Evaluation**
+What This Is
+
+Process supervision research requires training data that captures how reasoning navigates uncertainty, contradiction, and error detection, not just correct answers. Standard chain-of-thought datasets show what a model claims to think; Sinterform traces document the mechanical process of reaching conclusions under constraint.
+
+Each trace is generated through epistemic isolation: single-pass generation without empirical grounding, external tooling, or retry loops. The model must validate its own steps through operational state transitions rather than post-hoc justification.
+
+Compilation Architecture
+
+The visible trace is the final output of a compilation process. The underlying generation follows a bounded set of primitive operations with defined transition rules. What you read is the compiled prose; the training signal is the procedural structure that generated it.
+
+This distinction matters because it determines what the trace can teach a model. These are not curated success stories or failure dumps. They are records of reasoning navigating constraint boundaries: dimensional consistency checks, chronological self-correction, legitimate uncertainty acknowledgment, and protocol design under resource limits.
+
+Evaluation Protocol
 
 1. Open `trace_analysis_protocol.md`
-2. Open any trace file (e.g., `embedded_protocol_trace.md`)
-3. Copy both into your LLM (Claude, GPT-5, Gemini, etc.)
-4. Prompt: *"Evaluate this trace against the protocol"*
+2. Open any trace file (e.g., `distributed_systems_trace.md`, `bronze_age_protocol_trace.md`)
+3. Copy both into your LLM (Claude, GPT-4, Gemini, etc.)
+4. Prompt: *"Evaluate this trace for procedural rigor. Identify where uncertainty is encoded as operational state rather than hedging language, and where the reasoning catches its own errors, acknowledges knowledge gaps, or maintains dimensional discipline across abstractions."*
 
-**Generation Context**
+What to Look For
 
-These are not curated success stories or failure dumps. They are procedural traces capturing how reasoning navigates constraint boundaries when verification must be generated rather than measured.
+*   **Grounding discipline**: Specific values, named entities, and concrete instances preceding every abstraction
+*   **Error detection**: Self-correction of category mistakes, anachronisms, or dimensional inconsistencies mid-generation
+*   **Epistemic suspension**: Halts at knowledge boundaries rather than confident confabulation
+*   **Constraint memory**: Resource budgets or logical premises invoked early that remain respected downstream
 
-*Epistemic Isolation Protocol:*
-- Single-shot generation (1-shot, no retries)
-- Recursive verification prompts without empirical grounding
-- No MCP access, no tool use, no external context injection
-- Post-processing limited to prose formatting (non-generative)
+Generation Parameters
 
-*Baseline Reality:* Standard LLMs under these constraints typically produce sophisticated confabulation: mathematics that appears formal but contains dimensional errors, resource estimates that conflate units (gigaflops with gigabytes), and verification tokens that signal rigor without performing calculation. The target is not ground truth but expert-class error detection: distinguishing naive hallucination (category errors) from competent-looking mistakes (optimistic architectural assumptions).
+*   Single-shot generation (1-shot, no retries, no temperature sampling)
+*   Recursive self-verification without empirical grounding or tool use
+*   No MCP access, no external context injection
+*   Post-processing limited to structural compilation only (non-generative)
 
-**Analytical Framework**
+Status
 
-Evaluate traces for dimensional consistency. Track resource claims (memory budgets, latency bounds, energy costs) through the reasoning chain. Does the trace maintain unit discipline and constraint memory, or does it invoke limits early only to violate them later? Look for grounding discipline: specific byte counts and memory addresses preceding every abstraction.
+Pre-launch. Building corpora in mathematics, causal inference, distributed systems, and protocol design. Seeking design partners working on process supervision or alignment who need training data capturing expert-class error modes.
 
-Assess epistemic suspension. Locate moments where the trace encounters contradictory constraints and halts resolution rather than forcing premature closure. Identify whether uncertainty gaps are marked explicitly or buried in confident prose. Distinguish naive confabulation (unaware category mistakes) from sophisticated confabulation (performative verification lacking validation capacity).
+Contact
 
-**Contact**
-
-Evaluate a trace. If Sinterform generated error modes surprise you, contact me for a custom generation with the domain of your choice.
+Evaluate a trace. If the procedural rigor surprises you, if the confabulation is sophisticated enough to pass casual inspection but structured enough to be caught by the protocol, contact me for a custom generation in your domain.
 
 Website: www.corelathe.com  
 Email: nick@corelathe.com
