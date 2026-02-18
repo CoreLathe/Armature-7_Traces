@@ -1,12 +1,12 @@
 Sinterform: Cognitive Process Traces
 
-Sinterform generates training data for cognitive process supervision from a **mature constraint architecture**. The traces you see are relaxed-mode compilations of procedural state machine executions. These represent expert-class reasoning captured as technical prose, generated through strict epistemic protocols rather than staged narration.
+Sinterform generates training data for cognitive process supervision from a **mature constraint architecture**. The traces you see are translated compilations of procedural executions into technical prose. These represent expert-class reasoning captured as technical prose, generated through strict epistemic protocols rather than staged narration.
 
 What This Is
 
 Process supervision research requires training data that captures how reasoning navigates uncertainty, contradiction, and error detection, not just correct answers. Standard chain-of-thought datasets show what a model claims to think; Sinterform traces document the mechanical process of reaching conclusions under constraint.
 
-Each trace is generated through epistemic isolation: single-pass generation without empirical grounding, external tooling, or retry loops. The model must validate its own steps through operational state transitions rather than post-hoc justification.
+Each trace is generated through epistemic isolation: single-pass generation without empirical grounding, external tooling, or retry loops. The model must validate its own steps through operational steps rather than post-hoc justification.
 
 Compilation Architecture
 
