@@ -1,4 +1,4 @@
- # Sinterform: Cognitive Process Traces
+# Sinterform: Cognitive Hygiene as AI Infrastructure
 
 Sinterform generates training data for cognitive process supervision from **constrained procedural executions**. The traces are compiled records of reasoning navigating uncertainty, contradiction, and resource limits without external validation: not curated success stories, not failure dumps, but the mechanical process of reaching conclusions under operational constraint.
 
