@@ -1,43 +1,56 @@
-# Armature-7: Cognitive Hygiene as AI Infrastructure
+# Armature-7: Reasoning Traces for Process Supervision
 
-Armature-7 generates training data for cognitive process supervision from resource-aware procedural executions. The traces are compiled records of reasoning navigating uncertainty, contradiction, and resource limits without external validation: not curated success stories, not failure dumps, but the mechanical process of reaching conclusions under operational constraint.
+Training data that captures how models handle uncertainty, contradiction, and resource limits - not curated successes, but the mechanical process of reaching conclusions under constraint.
 
-## What This Is
+## The Signal
 
-Process supervision research needs training data that captures how reasoning handles uncertainty and error detection, not just correct answers. Standard chain-of-thought datasets show what a model claims to think. Armature-7 traces document the procedural structure that generated the conclusion.
+Current chain-of-thought datasets show what models *claim* to think. We document the procedural structure that generated the conclusion, including the failures.
 
-Each trace is produced under epistemic isolation: no retries, no external tooling, no empirical grounding. The model validates its own steps through operational state transitions rather than post-hoc justification. The visible prose is the compiled output; the training signal is the constraint navigation underneath.
+Consider this unprompted correction from a trace designing bronze-age trade protocols:
+
+> Wait. The Bell Beaker floruit is *before* the height of Hittite and Mycenaean metalworking. By roughly 1400-1200 BCE when the other two are major players, Bell Beaker as a coherent cultural complex has dissolved into successor cultures... I should think about what the question is actually asking.
+
+No external fact-checker triggered this. No retry loop. The model suspended its own solution attempt, discarded the framing, and regrouped - within a single generation pass, under strict epistemic isolation.
+
+This is the recursive error-detection signal that process supervision requires.
+
+## Methodology
+
+We generate single-pass autoregressive traces under hard constraints: no tool use (MCP, search, calculation engines), no retrieval augmentation, no retry loops. This forces validation through internal consistency - dimensional analysis, chronological coherence, constraint memory - rather than external grounding.
+
+We then filter aggressively for structural properties, not factual correctness:
+
+- **Constraint memory:** Resource budgets mentioned early that bind later decisions (e.g., donkey load limits calculated at 60-90kg that subsequently bound token weight designs)
+- **Dimensional discipline:** Quantitative claims that participate in calculations, not decorative numeracy  
+- **Epistemic suspension:** Hard stops at knowledge boundaries vs. stylistic hedging
+- **Error architecture:** High-fidelity mistakes (subtle off-by-one errors, optimistic assumptions that survive initial scrutiny) vs. category errors
+
+The result is not ground-truth verified knowledge. It is reasoning architectures worth distilling - traces that demonstrate how cognition navigates limits when empirical validation is unavailable.
 
 ## Evaluation Protocol
 
-1. Open `trace_analysis_protocol.md`
-2. Open any trace file
-3. Copy both into your LLM
-4. Prompt: *"Evaluate this trace according to the protocol."*
+We assess traces via the protocol in `trace_analysis_protocol.md`. Key criteria:
 
-## What to Look For
+- Does claimed self-correction perform dimensional analysis, or merely emit the phrase?
+- Do early constraints actually bind downstream, or does constraint amnesia occur?
+- Is uncertainty operational (structural halting) or performative (hedging that slides into confidence)?
 
-* **Grounding discipline**: Specific values, named entities, and concrete instances preceding every abstraction
-* **Error detection**: Self-correction of category mistakes, anachronisms, or dimensional inconsistencies mid-generation
-* **Epistemic suspension**: Halts at knowledge boundaries rather than confident conflation
-* **Constraint memory**: Resource budgets or logical premises invoked early that remain respected downstream
+Try it: Open any trace. Look for the moment where the model audits its own confidence, checks its resource budget, or halts at a knowledge gap rather than confabulating. If the procedural rigor surprises you, the methodology is working.
 
-## Generation Parameters
+## Current Status
 
-* Epistemic isolation: no retries, no external tooling (MCP, search, calculation engines)
-* Recursive self-verification without empirical grounding
-* Post-processing limited to structural formatting (non-generative)
+Pre-release. Building corpora in:
 
-## Status
+- **Mathematics:** Complex derivations with off-by-one vulnerabilities
+- **Distributed systems:** Optimistic architectural assumptions buckling under dimensional audit  
+- **Causal inference:** Confounding detection without empirical grounding
+- **Protocol design:** Consensus mechanisms under resource constraints
 
-Pre-release. Building corpora in mathematics, causal inference, distributed systems, and protocol design. Current focus: high-fidelity error modes, subtle constraint interactions, off-by-one errors in complex derivations, optimistic architectural assumptions that survive initial scrutiny but buckle under dimensional audit.
+Each corpus targets specific high-fidelity error modes: subtle constraint interactions, temporal drift in multi-step reasoning, premature closure under token pressure.
 
-Seeking design partners working on process supervision or alignment who need training data documenting how reasoning catches itself.
+We do not yet know if this methodology scales beyond boutique generation, or if the structural properties survive distillation into smaller models. The constraints may prove too brittle, or the error modes too idiosyncratic. We are documenting the boundary conditions as carefully as the successes.
 
-## Contact
+Seeking design partners training process reward models or error-detection verifiers who need data documenting *how reasoning catches itself* - not binary correct/incorrect labels, but the kinematics of constraint navigation.
 
-Evaluate a trace. If the procedural rigor surprises you, reach out for a custom generation in your domain.
-
-Website: www.corelathe.com
-
+Website: www.corelathe.com  
 Email: nick@corelathe.com
