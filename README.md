@@ -1,12 +1,12 @@
-# Armature-7: Reasoning Traces for Process Supervision
+**Armature-7: Reasoning Traces for Process Supervision**
 
-Current chain-of-thought datasets capture theatrical confidence—models simulating rigor without calculation, citing phantom sources, exploring alternatives without cost arbitration. We document the mechanical process of reasoning under hard constraint: how models audit premises, propagate resource limits, and suspend at knowledge boundaries when external grounding is unavailable.
+Current chain-of-thought datasets capture theatrical confidence: models simulating rigor without calculation, citing phantom sources, exploring alternatives without cost arbitration. We document the mechanical process of reasoning under hard constraint. We show how models audit premises, propagate resource limits, and suspend at knowledge boundaries when external grounding is unavailable.
 
 The trace below demonstrates recursive error-detection through structural discipline.
 
 ## Exemplar: Protocol Design
 
-Prompt: Design a coordination protocol for itinerant smiths from Hittite, Mycenaean, and Bell Beaker traditions meeting at seasonal tin markets—constrained by illiteracy, pack-animal capacity, and mutually unintelligible metallurgical vocabularies.
+Prompt: Design a coordination protocol for itinerant smiths from Hittite, Mycenaean, and Bell Beaker traditions meeting at seasonal tin markets, constrained by illiteracy, pack-animal capacity, and mutually unintelligible metallurgical vocabularies.
 
 The trace detects a temporal constraint violation that makes the historical premise impossible:
 
@@ -22,7 +22,7 @@ It concludes at a knowledge boundary without hedging synthesis:
 
 ## The Signal
 
-The signal lives in the negative space of the trace above—the chronological confabulation that would smooth over the temporal impossibility; the constraint amnesia that would forget the donkey load by page twelve; the hedging that would substitute for hard epistemic suspension. We document reasoning architectures by what they refuse: the drift prevented, the category error detected, the bullshit not spoken.
+The signal lives in the negative space of the trace above: the chronological confabulation that would smooth over the temporal impossibility; the constraint amnesia that would forget the donkey load by page twelve; the hedging that would substitute for hard epistemic suspension. We document reasoning architectures by what they refuse: the drift prevented, the category error detected, the bullshit not spoken.
 
 ## Methodology
 
