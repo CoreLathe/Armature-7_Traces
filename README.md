@@ -8,37 +8,6 @@ Process supervision research needs training data that captures how reasoning han
 
 Each trace is produced under epistemic isolation: no retries, no external tooling, no empirical grounding. The model validates its own steps through operational state transitions rather than post-hoc justification. The visible prose is the compiled output; the training signal is the constraint navigation underneath.
 
-## What This Looks Like
-
-A raw fragment from a trace designing bronze-age trade protocols. Note the self-correction emerging mid-generation, not added afterward:
-
-> Wait — I'm already reaching toward protocol design and I haven't even mapped the failure modes yet. Let me get specific about what actually collides.
->
-> [failure mode taxonomy]
->
-> A dimensional signature. Not names, not units, not scales — just the dimensional exponents of what's being measured... This is not an ontology — it's physics itself. It's 7 small integers. 7 bytes.
->
-> Am I hand-waving the distinction between "shared physics" and "shared ontology" here? Let me check.
->
-> [later]
->
-> Quick check on the dim_sig packing: 7 × 4-bit values = 28 bits, fits in 4 bytes... That works.
->
-> [later]
->
-> ```
-> STATIC (compiled in):
->   Own channel descriptors:     8 channels × 14 bytes  =  112 bytes
->   Protocol state machine:      ~200 bytes code-resident state
->   Subtotal:                    ~312 bytes
->
-> PER-NEIGHBOR (dynamic):
->   ...
->   At 4KB budget: floor((4096 - 312) / 147) = 25 neighbors max
-> ```
-
-The trace catches itself rushing to build a solution, stops to list five specific ways devices can clash, then discovers that 7 bytes of basic physics data replace complex negotiations. Fifty lines of reasoning later, it verifies the exact math against that original 64KB limit, calculating precisely 25 devices max. Typical AI forgets the budget after paragraph one; this remembers it from start to finish.
-
 ## Evaluation Protocol
 
 1. Open `trace_analysis_protocol.md`
