@@ -12,9 +12,30 @@ Each trace is produced under epistemic isolation: no retries, no external toolin
 
 A raw fragment from a trace designing bronze-age trade protocols. Note the self-correction emerging mid-generation, not added afterward:
 
-> Wait. The Bell Beaker floruit is *before* the height of Hittite and Mycenaean metalworking. By roughly 1400–1200 BCE when the other two are major players, Bell Beaker as a coherent cultural complex has dissolved into successor cultures. These three traditions don't straightforwardly walk into the same market simultaneously.
+> Wait — I'm already reaching toward protocol design and I haven't even mapped the failure modes yet. Let me get specific about what actually collides.
 >
-> But I should think about what the question is actually asking. The three names function as stand-ins for three distinct, mutually unintelligible metallurgical traditions with different alloy standards. The design problem is real regardless of exact chronological overlap.
+> [failure mode taxonomy]
+>
+> A dimensional signature. Not names, not units, not scales — just the dimensional exponents of what's being measured... This is not an ontology — it's physics itself. It's 7 small integers. 7 bytes.
+>
+> Am I hand-waving the distinction between "shared physics" and "shared ontology" here? Let me check.
+>
+> [later]
+>
+> Quick check on the dim_sig packing: 7 × 4-bit values = 28 bits, fits in 4 bytes... That works.
+>
+> [later]
+>
+> ```
+> STATIC (compiled in):
+>   Own channel descriptors:     8 channels × 14 bytes  =  112 bytes
+>   Protocol state machine:      ~200 bytes code-resident state
+>   Subtotal:                    ~312 bytes
+>
+> PER-NEIGHBOR (dynamic):
+>   ...
+>   At 4KB budget: floor((4096 - 312) / 147) = 25 neighbors max
+> ```
 
 The trace detects its own anachronism, discards the current framing, and regroups with a reframed premise, all within a single generation pass.
 
