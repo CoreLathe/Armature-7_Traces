@@ -1,10 +1,10 @@
-# Sinterform: Cognitive Hygiene as AI Infrastructure
+# Armature-7: Cognitive Hygiene as AI Infrastructure
 
-Sinterform generates training data for cognitive process supervision from resource-aware procedural executions. The traces are compiled records of reasoning navigating uncertainty, contradiction, and resource limits without external validation: not curated success stories, not failure dumps, but the mechanical process of reaching conclusions under operational constraint.
+Armature-7 generates training data for cognitive process supervision from resource-aware procedural executions. The traces are compiled records of reasoning navigating uncertainty, contradiction, and resource limits without external validation: not curated success stories, not failure dumps, but the mechanical process of reaching conclusions under operational constraint.
 
 ## What This Is
 
-Process supervision research needs training data that captures how reasoning handles uncertainty and error detection, not just correct answers. Standard chain-of-thought datasets show what a model claims to think. Sinterform traces document the procedural structure that generated the conclusion.
+Process supervision research needs training data that captures how reasoning handles uncertainty and error detection, not just correct answers. Standard chain-of-thought datasets show what a model claims to think. Armature-7 traces document the procedural structure that generated the conclusion.
 
 Each trace is produced under epistemic isolation: no retries, no external tooling, no empirical grounding. The model validates its own steps through operational state transitions rather than post-hoc justification. The visible prose is the compiled output; the training signal is the constraint navigation underneath.
 
