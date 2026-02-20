@@ -1,4 +1,4 @@
-**Armature-7: Reasoning Traces for Process Supervision**
+# Armature-7: Reasoning Traces for Process Supervision
 
 Current chain-of-thought datasets capture theatrical confidence—models simulating rigor without calculation, citing phantom sources, exploring alternatives without cost arbitration. We document the mechanical process of reasoning under hard constraint: how models audit premises, propagate resource limits, and suspend at knowledge boundaries when external grounding is unavailable.
 
