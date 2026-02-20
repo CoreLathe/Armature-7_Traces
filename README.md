@@ -37,7 +37,7 @@ A raw fragment from a trace designing bronze-age trade protocols. Note the self-
 >   At 4KB budget: floor((4096 - 312) / 147) = 25 neighbors max
 > ```
 
-The trace detects its own anachronism, discards the current framing, and regroups with a reframed premise, all within a single generation pass.
+Starting from a 64KB hard limit, the trace calculates exact byte budgets (8 channels × 14 bytes = 112 bytes static) and derives a neighbor capacity ceiling (floor((4096-312)/147) = 25 max). Then verifies the protocol fits treating the memory constraint as a binding invariant rather than a decorative limitation.
 
 ## Evaluation Protocol
 
