@@ -10,7 +10,7 @@ Consider this unprompted correction from a trace designing bronze-age trade prot
 
 > Wait. The Bell Beaker floruit is *before* the height of Hittite and Mycenaean metalworking. By roughly 1400–1200 BCE when the other two are major players, Bell Beaker as a coherent cultural complex has dissolved into successor cultures... I should think about what the question is actually asking.
 
-No external fact-checker triggered this. No retry loop. The model suspended its own solution attempt, discarded the framing, and regrouped within a single generation pass under strict epistemic isolation.
+The model didn't just correct a date. It detected a temporal constraint violation that made the premise impossible, suspended the solution attempt, and reframed the design space from historical reconstruction to functional protocol design unprompted, without external feedback.
 
 This is the recursive error-detection signal that process supervision requires.
 
