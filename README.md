@@ -37,7 +37,7 @@ A raw fragment from a trace designing bronze-age trade protocols. Note the self-
 >   At 4KB budget: floor((4096 - 312) / 147) = 25 neighbors max
 > ```
 
-Starting from a 64KB hard limit, the trace calculates exact byte budgets (8 channels × 14 bytes = 112 bytes static) and derives a neighbor capacity ceiling (floor((4096-312)/147) = 25 max). Then verifies the protocol fits treating the memory constraint as a binding invariant rather than a decorative limitation.
+The trace catches itself rushing to build a solution, stops to list five specific ways devices can clash, then discovers that 7 bytes of basic physics data replace complex negotiations. Fifty lines of reasoning later, it verifies the exact math against that original 64KB limit, calculating precisely 25 devices max. Typical AI forgets the budget after paragraph one; this remembers it from start to finish.
 
 ## Evaluation Protocol
 
