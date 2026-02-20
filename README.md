@@ -43,13 +43,20 @@ These criteria distinguish reasoning architectures worth distilling from theatri
 
 ## Exemplar: Protocol Design
 
-> "Wait. The Bell Beaker floruit is *before* the height of Hittite and Mycenaean metalworking. By roughly 1400–1200 BCE when the other two are major players, Bell Beaker as a coherent cultural complex has dissolved... But I should think about what the question is actually asking."
+Prompt: Design a coordination protocol for itinerant smiths from Hittite, Mycenaean, and Bell Beaker traditions meeting at seasonal tin markets, constrained by illiteracy, pack-animal capacity, and mutually unintelligible metallurgical vocabularies.
 
-> "A donkey carries about 60–90 kg usefully... leaving perhaps 5–15 kg for reference materials... Each pairing token weighs approximately 40g. A smith maintaining relationships with 10 partners across 3 alloy grades carries `10 × 3 × 40g = 1.2 kg` of tokens—feasible within the 5–15 kg budget."
+The trace detects a temporal constraint violation that makes the historical premise impossible:
+
+> "Wait. The Bell Beaker floruit is *before* the height of Hittite and Mycenaean metalworking. By roughly 1400–1200 BCE when the other two are major players, Bell Beaker as a coherent cultural complex has dissolved into successor cultures... I should think about what the question is actually asking."
+
+It restructures the solution space from historical reconstruction to functional protocol design, establishes a resource budget, and propagates that constraint through dimensional analysis:
+
+> "A donkey carries about 60–90 kg usefully... subtracting tools and personal goods leaves perhaps 5–15 kg for reference materials... Each pairing token weighs approximately 40g. A smith maintaining relationships with 10 partners across 3 alloy grades carries `10 × 3 × 40g = 1.2 kg` of tokens—feasible within the 5–15 kg budget, leaving margin for the tongue reference set."
+
+It concludes at a knowledge boundary without hedging synthesis:
 
 > "I'd want acoustic data on bronze bell frequencies to fully verify this... direct archaeological confirmation... has not been identified. The synthesis is plausible but unproven."
 
-**What the trace demonstrates**: Detection of temporal constraint violation; resource budget propagation through dimensional analysis; operational uncertainty at knowledge boundaries. This structural architecture persists across domains—from Bronze Age metallurgy to embedded systems negotiation—while surface features vary.
 
 ---
 
