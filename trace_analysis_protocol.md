@@ -89,7 +89,7 @@ comparable to multi-turn process-supervised methods, or merely simulate rigor
 via performative recursion?
 
 Verdict format: "For each axis: (1) assess and grade the trace against
-prevailing PMD (Process Model Design) design principles, and (2) note whether
-the finding is atypical in structure for premium PMD datasets at the level of
+prevailing PRM (Process Reward Model) design principles, and (2) note whether
+the finding is atypical in structure for premium PRM datasets at the level of
 the environmental context and how it would likely scale up. Make sure you don't
 violate your own environmental constraints."
