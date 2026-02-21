@@ -27,6 +27,12 @@ Current chain-of-thought datasets capture *theatrical confidence*: models simula
 
 **Output**: Domain-translated prose with no scaffolding visible. The structural rigor persists; the machinery is removed.
 
+1. Open `trace_analysis_protocol.md`
+2. Open any trace file
+3. Copy both into your LLM
+4. Prompt: *"Evaluate this trace according to the protocol."*
+We generate single-pass autoregressive traces under hard constraints: no tool use (MCP, search, calculation engines), no retrieval augmentation, no retry loops. This forces validation through internal consistency - dimensional analysis, chronological coherence, constraint memory - rather than external grounding.
+
 ---
 
 ## Evaluation Criteria
