@@ -1,3 +1,5 @@
+Problem: Design the protocol by which embedded devices with <64KB RAM autonomously negotiate shared abstractions (event schemas, coordinate systems, temporal references) when they enter RF range of each other, without pre-shared ontologies or cloud mediation. How do you prevent "abstraction collisions" where two nodes use the same event type name for physically incompatible phenomena, given they can't store large negotiation histories?
+
 Let me think through this carefully.
 
 So the problem is: tiny embedded devices, under 64KB of RAM total, come into RF range of each other and need to figure out shared abstractions — event schemas, coordinate systems, time references — without any pre-agreed ontology and without phoning home to a cloud. And the specific threat is "abstraction collisions" where two devices use the same event type name for completely different physical phenomena, and they can't store big negotiation logs to work this out over time.
