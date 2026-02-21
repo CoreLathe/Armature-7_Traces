@@ -18,6 +18,12 @@ It concludes at a knowledge boundary without hedging synthesis:
 
 > "I'd want acoustic data on bronze bell frequencies to fully verify this... direct archaeological confirmation... has not been identified. The synthesis is plausible but unproven."
 
+**Evaluate yourself**
+1.  Open `trace_analysis_protocol.md`
+2.  Open any trace file
+3.  Copy both into your LLM
+4.  Prompt: "Evaluate this trace according to the protocol."
+
 **The Architecture**
 
 Armature-7 treats reasoning as an interrupt-driven state machine. Hard dimensional budgets bind downstream claims. Epistemic suspension halts at knowledge boundaries versus emitting hedging synthesis. Exactly seven cognitive primitives enforce this discipline: no tool use, no retrieval augmentation, and no retry loops. Validation occurs through internal consistency alone.
@@ -30,12 +36,6 @@ Filter for structural properties, not factual correctness:
 *   Does claimed self-correction perform dimensional analysis, or merely emit the phrase?
 *   Do early constraints actually bind downstream through derivable steps, or does constraint amnesia occur?
 *   Is uncertainty operational (structural halting) or performative (hedging that slides into confidence)?
-
-**Evaluate yourself**
-1.  Open `trace_analysis_protocol.md`
-2.  Open any trace file
-3.  Copy both into your LLM
-4.  Prompt: "Evaluate this trace according to the protocol."
 
 **Current Status**
 
