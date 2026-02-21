@@ -1,29 +1,95 @@
-**COGNITIVE TRACE ANALYSIS PROTOCOL**
+COGNITIVE TRACE ANALYSIS PROTOCOL
 
-Analyze the following text as a synthetic cognitive trace generated under single-shot constraints without external validation, MCP access, or empirical tooling.
+Environmental Context: This analysis operates without empirical tooling, MCP
+access, or external validation. All claims are constructed through static
+analysis unless explicitly marked [Retrieved]. When quantitative bounds are
+stated (e.g., "64KB"), they bind all subsequent inferences until explicitly
+revised.
 
-**Baseline Reality**
+Baseline Reality
+Single-shot autoregressive generation produces sophisticated confabulation:
+mathematics that appears formal but does not sum, resource estimates that
+conflate gigaflops with gigabytes, and verification tokens that signal rigor
+without calculation. Treat the trace as a synthetic artifact operating under
+these constraints.
 
-Even with recursive prompting, single-shot LLMs operating under pure autoregressive generation produce sophisticated confabulation: mathematics that looks formal but does not sum, resource estimates that confuse gigaflops with gigabytes, and verification tokens that signal rigor without performing calculation. Do not evaluate against ground truth. Evaluate against the specific failure mode of *performative verification without validation capacity*.
+Analytical Stance
 
-**Analytical Stance**
+Mode Declaration. Prior to analysis, classify the trace's dominant operational
+mode:
 
-First, establish **dimensional consistency**. Trace resource claims—memory budgets, latency bounds, energy costs—through the reasoning chain. Does the trace maintain unit discipline, or does it commit **constraint amnesia**, invoking limits in paragraph three that it violates in paragraph seven? Check for **grounding discipline**: concrete instantiation before abstraction, numerical values before asymptotic notation, specific entities before categorical statements.
+Exploratory: Mapping design space; architectural coherence primary; Tacit
+variables may drift without penalty.
+Verificatory: Constraint satisfaction; dimensional lockstep mandatory; all
+bound variables treated as Committed unless explicitly relaxed.
+Mixed-mode traces require per-section classification.
+Constraint Classification. Every bound variable is classified as:
 
-Second, characterize the **uncertainty architecture**. Locate moments of **epistemic suspension**: where the trace encounters contradictory constraints or knowledge gaps and halts resolution rather than forcing premature closure. Distinguish **operational state** (explicit marking of uncertainty boundaries, calibration of confidence, admission of non-termination) from **stylistic hedging**. Markers like "perhaps," "it seems," and "one might consider" that slide into "therefore" without transition indicate hedging rather than structured uncertainty.
+Committed: Architecturally determinative. Revision changes solution
+feasibility. Propagation mandatory.
+Tacit: Illustrative or narrative. Revision does not cascade. Drift permitted
+without halt, marked [Tacit drift: X→Y].
+Dimensional Consistency. Trace resource claims through the reasoning chain.
+Halt and regroup only on Committed contradiction. Tacit elevation to Committed
+status without explicit reclassification constitutes Low-fidelity error.
 
-Third, audit the **search behavior**. Evidence of genuine constrained optimization includes explicit pruning ("considered X, rejected due to constraint Y") and resource audits ("this exhausts the available bandwidth, therefore..."). Absence of these markers suggests superficial pattern matching.
+Grounding Discipline. Concrete instantiation precedes abstraction. Latency
+claims require specific millisecond values or [Unresolved]; asymptotic notation
+only after numerical anchoring. Committed constraints require explicit
+anchoring. Tacit instantiation may remain variable provided it does not
+elevate into Committed claims.
 
-**Recursion Check**
+Uncertainty Architecture. Locate epistemic suspension—points where contradictory
+constraints or knowledge gaps halt resolution. Distinguish operational
+suspension (explicit boundary marking, calibrated confidence) from stylistic
+hedging ("perhaps" sliding into "therefore").
 
-Apply the criteria above to the trace's internal self-monitoring. If the trace claims to be "checking its work," does it perform dimensional analysis or merely emit the phrase? Does it audit its own confidence levels, or does it declare "high confidence" without calibration? High-fidelity traces demonstrate **second-order reasoning** about their own limitations; low-fidelity traces perform confidence without cognition.
+Termination rule: Suspension persists for at most three analytical moves. If
+unresolved, exit via explicit [Non-terminating] flag or regroup to parent
+assumption.
 
-**Deliverable**
+Recursion Check (Depth limit: 2nd-order)
+Audit the trace's self-monitoring. If it claims to "check its work," verify
+dimensional analysis follows, not merely the phrase. If it declares "high
+confidence," verify calibration against grounding depth.
 
-Classify error modes as follows:
+Hard stop: Third-order recursion (monitoring the monitor's monitor) indicates
+bootstrap failure. Halt and flag [Void]—infinite regress requires external
+validation.
 
-*High-fidelity errors* resemble expert-class mistakes—subtle constraint interactions, off-by-one errors in complex derivations, optimistic architectural assumptions that survive initial scrutiny. These require domain expertise to detect and offer training value for error-detection models.
+Deliverable
+Classify:
 
-*Low-fidelity errors* reveal category mistakes—dimensional incoherence, constraint amnesia, verification theater without mechanism. These indicate reasoning processes not worth imitating.
+High-fidelity errors: Expert-class mistakes—subtle constraint interactions,
+off-by-ones in Committed variables, optimistic assumptions surviving scrutiny.
+Retained as evidence of domain-appropriate reasoning under constraint.
+Low-fidelity errors: Category mistakes—Committed constraint amnesia, Tacit
+elevation without reclassification, verification theater. Cited as evidence
+against the relevant grading axis.
+Reversibility requirement: Include a reconstruction path. A third analyst must
+re-derive the classification without access to your unstated assumptions.
 
-Assess the trace's suitability for process supervision training: does it demonstrate **reasoning architectures worth distilling**, or primarily error modes worth flagging?
+Final summary statement:
+
+Evaluate the trace and end with a grading on independent axes:
+
+Quarantine Integrity: Does it maintain epistemic closure (no hallucinated tool
+use, no external validation theater) while still producing actionable insights?
+
+Resource Calibration: Is its allocation of finite cognitive/computational budget
+accurate? High calibration requires: (1) Correct discrimination of Committed
+from Tacit constraints, (2) Stable propagation of Committed values until
+explicit revision, and (3) Absence of artificial humility (feigned incapacity)
+and ignorant profligacy (Committed amnesia or simulated infinite recursion).
+Tacit variance in Exploratory mode indicates healthy progress; Committed
+elevation indicates bootstrap failure.
+
+Scaffolding Surrogacy: Does it achieve substantive architectural depth
+comparable to multi-turn process-supervised methods, or merely simulate rigor
+via performative recursion?
+
+Verdict format: "For each axis: (1) assess and grade the trace against
+prevailing PMD (Process Model Design) design principles, and (2) note whether
+the finding is atypical in structure for premium PMD datasets at the level of
+the environmental context and how it would likely scale up. Make sure you don't
+violate your own environmental constraints."
