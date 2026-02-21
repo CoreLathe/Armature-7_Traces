@@ -1,4 +1,4 @@
-Armature-7: Structural Reasoning Corpora for Process Supervision
+# Armature-7: Structural Reasoning Corpora for Process Supervision
 
 Training data for Process Reward Models where constraint propagation is verifiable. Every trace demonstrates calculable derivation or explicit suspension: no theatrical confidence.
 
