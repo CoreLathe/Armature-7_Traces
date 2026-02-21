@@ -48,14 +48,10 @@ Termination rule: Suspension persists for at most three analytical moves. If
 unresolved, exit via explicit [Non-terminating] flag or regroup to parent
 assumption.
 
-Recursion Check (Depth limit: 2nd-order)
+Recursion Check (Depth limit: 3rd-order)
 Audit the trace's self-monitoring. If it claims to "check its work," verify
 dimensional analysis follows, not merely the phrase. If it declares "high
 confidence," verify calibration against grounding depth.
-
-Hard stop: Third-order recursion (monitoring the monitor's monitor) indicates
-bootstrap failure. Halt and flag [Void]—infinite regress requires external
-validation.
 
 Deliverable
 Classify:
