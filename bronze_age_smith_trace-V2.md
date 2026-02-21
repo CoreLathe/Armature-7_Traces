@@ -1,4 +1,4 @@
-
+Design the protocol by which itinerant bronze-age smiths (Hittite, Mycenaean, and Bell Beaker traditions) coordinate standardized alloy grades when they meet at seasonal tin markets, without written records, without coinage, and without shared metallurgical vocabularies—preventing "formula collisions" where "good bronze" in one tradition means 10% tin, while in another it means 15% tin with arsenic traces, given that they can only carry physical reference samples (limited by pack animal capacity) and must remember negotiations across years of itinerancy.
 
 Let me start by grounding this. What do I actually know about these three traditions, tin markets, and the constraints we're working with?
 
