@@ -1,6 +1,6 @@
 # Armature-7: Structural Reasoning Corpora for Process Supervision
 
-Training data for Process Reward Models where constraint propagation is verifiable. Every trace demonstrates calculable derivation or explicit suspension: no theatrical confidence.
+Process Reward Models need to see reasoning that catches itself. Not "sounding careful" but actually halting when constraints violate. This corpus documents constraint propagation in natural language: every trace shows calculable derivation or explicit suspension, no theatrical confidence.
 
 **What it looks like**
 
