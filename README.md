@@ -30,7 +30,7 @@ Armature-7 enforces reasoning discipline through seven operations. These are str
 
 Dimensional budgets, once committed, bind all downstream claims. Violation triggers halt and regroup, not continuation. When a trace reaches a knowledge boundary, it suspends and logs the boundary rather than synthesizing past it.
 
-No tools. No retrieval. No retries. Validation is internal: each trace documents where constraints held, where they were tested, and where the protocol suspended at the limits of what could be grounded.
+No tools. No retrieval. No retries. External execution obscures the constraint propagation mechanics that constitute the training signal. Validation is internal: each trace documents where constraints held, where they were tested, and where the protocol suspended at the limits of what could be grounded.
 
 For process supervision training, this means constraint propagation is auditable from start to finish. Uncertainty is structural, not performative.
 
