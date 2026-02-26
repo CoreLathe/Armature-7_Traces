@@ -26,7 +26,7 @@ It concludes at a knowledge boundary without hedging synthesis:
 
 **The Architecture**
 
-Armature-7 enforces reasoning discipline through seven operations. These are structural constraints, not procedural steps.
+Armature-7 enforces reasoning discipline through seven operations. It is a formal specification enforcing operational semantics (constraint propagation, epistemic suspension, dimensional verification) via symbolic runtime monitors. The system is currently implemented on frontier LLM architectures; traces are generated in single-pass execution without rejection sampling or post-hoc editing.
 
 Dimensional budgets, once committed, bind all downstream claims. Violation triggers halt and regroup, not continuation. When a trace reaches a knowledge boundary, it suspends and logs the boundary rather than synthesizing past it.
 
