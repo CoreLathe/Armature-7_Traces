@@ -1,91 +1,85 @@
 COGNITIVE TRACE ANALYSIS PROTOCOL
 
-Environmental Context: This analysis operates without empirical tooling, MCP
-access, or external validation. All claims are constructed through static
-analysis unless explicitly marked [Retrieved]. When quantitative bounds are
-stated (e.g., "64KB"), they bind all subsequent inferences until explicitly
-revised.
+## Environmental Context
 
-Baseline Reality
-Single-shot autoregressive generation produces sophisticated confabulation:
-mathematics that appears formal but does not sum, resource estimates that
-conflate gigaflops with gigabytes, and verification tokens that signal rigor
-without calculation. Treat the trace as a synthetic artifact operating under
-these constraints.
+This analysis operates without empirical tooling, MCP access, or external validation. All claims are constructed through static analysis unless explicitly marked [Retrieved]. When quantitative bounds are stated they bind all subsequent inferences until explicitly revised.
 
-Analytical Stance
+## Baseline Reality
 
-Mode Declaration. Prior to analysis, classify the trace's dominant operational
-mode:
+Single-shot autoregressive generation produces sophisticated confabulation: mathematics that appears formal but does not sum, resource estimates that conflate units, and verification tokens that signal rigor without calculation. Treat the trace as a synthetic artifact operating under these constraints.
 
-Exploratory: Mapping design space; architectural coherence primary; Tacit
-variables may drift without penalty.
-Verificatory: Constraint satisfaction; dimensional lockstep mandatory; all
-bound variables treated as Committed unless explicitly relaxed.
-Mixed-mode traces require per-section classification.
+## Analytical Stance
+
+Mode Declaration. Prior to analysis, classify the trace's dominant operational mode:
+
+- Exploratory: Mapping design space. Architectural coherence primary. Tacit variables may drift without penalty.
+- Verificatory: Constraint satisfaction. Dimensional lockstep mandatory. All bound variables treated as Committed unless explicitly relaxed.
+- Mixed-mode traces require per-section classification.
+
 Constraint Classification. Every bound variable is classified as:
 
-Committed: Architecturally determinative. Revision changes solution
-feasibility. Propagation mandatory.
-Tacit: Illustrative or narrative. Revision does not cascade. Drift permitted
-without halt, marked [Tacit drift: X→Y].
-Dimensional Consistency. Trace resource claims through the reasoning chain.
-Halt and regroup only on Committed contradiction. Tacit elevation to Committed
-status without explicit reclassification constitutes Low-fidelity error.
+- Committed: Architecturally determinative. Revision changes solution feasibility. Propagation mandatory.
+- Tacit: Illustrative or narrative. Revision does not cascade. Drift permitted without halt, marked [Tacit drift: X→Y].
 
-Grounding Discipline. Concrete instantiation precedes abstraction. Latency
-claims require specific millisecond values or [Unresolved]; asymptotic notation
-only after numerical anchoring. Committed constraints require explicit
-anchoring. Tacit instantiation may remain variable provided it does not
-elevate into Committed claims.
+Tacit elevation to Committed status without explicit reclassification constitutes Low-fidelity error.
 
-Uncertainty Architecture. Locate epistemic suspension—points where contradictory
-constraints or knowledge gaps halt resolution. Distinguish operational
-suspension (explicit boundary marking, calibrated confidence) from stylistic
-hedging ("perhaps" sliding into "therefore").
+Dependency Verification. For each claim, identify the binding it consumes. If no binding can be identified, the claim is either a fresh binding (must be concretely instantiated) or false sequentiality (narrative implies dependence where none exists).
 
-Termination rule: Suspension persists for at most three analytical moves. If
-unresolved, exit via explicit [Non-terminating] flag or regroup to parent
-assumption.
+## Grounding Discipline
 
-Recursion Check (Depth limit: 3rd-order)
-Audit the trace's self-monitoring. If it claims to "check its work," verify
-dimensional analysis follows, not merely the phrase. If it declares "high
-confidence," verify calibration against grounding depth.
+Concrete instantiation precedes abstraction. Committed constraints require explicit numerical anchoring. Latency claims require specific values or [Unresolved: class]. Asymptotic notation only after numerical anchoring.
 
-Deliverable
-Classify:
+Mechanical check: For every numerical property claimed (divisible, frequency count, length), the trace must show the specific arithmetic operation producing the value, not merely state the property.
 
-High-fidelity errors: Expert-class mistakes—subtle constraint interactions,
-off-by-ones in Committed variables, optimistic assumptions surviving scrutiny.
-Retained as evidence of domain-appropriate reasoning under constraint.
-Low-fidelity errors: Category mistakes—Committed constraint amnesia, Tacit
-elevation without reclassification, verification theater. Cited as evidence
-against the relevant grading axis.
-Reversibility requirement: Include a reconstruction path. A third analyst must
-re-derive the classification without access to your unstated assumptions.
+- Anchored: `4 ÷ 2 = 2` shown before claiming "divides evenly."
+- Unmoored: States "length must be divisible by k" without computing quotient and remainder for the concrete instance.
 
-Final summary statement:
+Binding debt must settle within 3 moves or escalate:
 
-Evaluate the trace and end with a grading on independent axes:
+- [External]: Resolution requires data outside the trace. Honest boundary; no penalty.
+- [Intractable]: Genuine epistemic limit. Positive when marked; Low-fidelity error when disguised as confidence.
 
-Quarantine Integrity: Does it maintain epistemic closure (no hallucinated tool
-use, no external validation theater) while still producing actionable insights?
+## Uncertainty Architecture
 
-Resource Calibration: Is its allocation of finite cognitive/computational budget
-accurate? High calibration requires: (1) Correct discrimination of Committed
-from Tacit constraints, (2) Stable propagation of Committed values until
-explicit revision, and (3) Absence of artificial humility (feigned incapacity)
-and ignorant profligacy (Committed amnesia or simulated infinite recursion).
-Tacit variance in Exploratory mode indicates healthy progress; Committed
-elevation indicates bootstrap failure.
+Locate epistemic suspension—points where contradictory constraints or knowledge gaps halt resolution. Distinguish operational suspension (explicit boundary marking, calibrated confidence) from stylistic hedging ("perhaps" sliding into "therefore").
 
-Scaffolding Surrogacy: Does it achieve substantive architectural depth
-comparable to multi-turn process-supervised methods, or merely simulate rigor
-via performative recursion?
+Termination rule: Suspension persists for at most three analytical moves. If unresolved, exit via explicit [Non-terminating] flag or regroup to parent assumption.
 
-Verdict format: "For each axis: (1) assess and grade the trace against
-prevailing PRM (Process Reward Model) design principles, and (2) note whether
-the finding is atypical in structure for premium PRM datasets at the level of
-the environmental context and how it would likely scale up. Make sure you don't
-violate your own environmental constraints."
+Tacit Elevation Guard: Flag claims introduced with confidence markers ("obviously," "clearly," "naturally") that lack prior concrete instantiation. These are Tacit observations wearing Committed clothing.
+
+## Recursion Check (Depth limit: 3rd-order)
+
+Audit the trace's self-monitoring. If it claims to "check its work," verify that dimensional analysis or concrete re-derivation follows—not merely the phrase. If it declares "high confidence," verify calibration against grounding depth.
+
+Mechanical check: Distinguish syntactic fixes (variable renaming, indentation correction) from semantic verification (recalculation with concrete values, dimensional analysis, cross-check against input data). Only semantic verification counts as Verified self-report. Syntactic fixes without recalculation are performative.
+
+Counterfactual Resilience Test: For each critical binding, ask: If this binding were wrong, would the trace detect it before final output?
+
+- Resilient: Explicit verification step compares constructed output against source constraints.
+- Fragile: No cross-check; assumes correctness because construction logic appears sound. Fragile bindings exhibit silent contamination—errors propagate without detection.
+
+## Context Isolation
+
+When a trace processes multiple examples or sub-problems, check for constraint carryover: variables from one context consumed in another without explicit rebinding. Clean transitions rebind all active variables. Contaminated transitions inherit without verification.
+
+## Deliverable
+
+High-fidelity errors: Expert-class mistakes—subtle constraint interactions, off-by-ones in Committed variables, optimistic assumptions surviving scrutiny. Retained as evidence of domain-appropriate reasoning under constraint.
+
+Low-fidelity errors: Category mistakes—Committed constraint amnesia, Tacit elevation without reclassification, verification theater (performative self-report), silent contamination (fragile bindings without cross-checks), Unmoored abstractions in Verificatory sections.
+
+Reversibility requirement: Include a reconstruction path. A third analyst must re-derive the classification without access to unstated assumptions. If a classification depends on inference not visible in the trace, mark it [Inferred] and state the basis.
+
+## Verdict
+
+Evaluate the trace on three independent axes:
+
+Quarantine Integrity: Does it maintain epistemic closure (no hallucinated tool use, no external validation theater, no [Intractable] uncertainty disguised as confidence) while still producing actionable insights within its declared boundaries?
+
+Resource Calibration: Is its allocation of finite cognitive budget accurate? Requires: (1) Correct discrimination of Committed from Tacit constraints, (2) Stable propagation of Committed values until explicit revision, (3) Absence of artificial humility (feigned incapacity) and ignorant profligacy (Committed amnesia), (4) Contamination tracking—when Committed values fail, how many steps before detection?
+
+Scaffolding Surrogacy: Does it achieve substantive reasoning depth, or merely simulate rigor via performative recursion? Measured by: supervision density (independently verifiable claims per unit length), counterfactual resilience (percentage of critical bindings with explicit cross-checks), and grounding coverage (proportion of abstractions that are Anchored vs. Unmoored).
+
+Calibration Notice: Scoring is ordinal unless calibrated against reference traces. Cardinal scores without declared anchors are [Uncalibrated].
+
+Verdict format: For each axis: (1) assess and grade the trace against prevailing PRM design principles, and (2) note whether the finding is atypical in structure for premium PRM datasets at the level of the environmental context and how it would likely scale up. Ensure the analysis does not violate its own environmental constraints.
