@@ -54,5 +54,4 @@ Structural property preservation is validated across domain translations. Genera
 
 Teams training process reward models or error-detection verifiers who need data documenting how reasoning catches itself. Not binary correct/incorrect labels, but the architecture of recovery under constraint.
 
-Website: www.corelathe.com  
-Email: nick@corelathe.com
+Email: data@corelathe.com
