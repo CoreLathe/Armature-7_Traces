@@ -52,6 +52,6 @@ Structural property preservation is validated across domain translations. Genera
 
 **Target partners**
 
-Teams training process reward models or error-detection verifiers who need data documenting how reasoning catches itself. Not binary correct/incorrect labels, but the architecture of recovery under constraint.
+We work with teams training process reward models who need data documenting how reasoning catches itself under constraint. Current focus: production-grade error detection verifiers. Inquiries welcome from industry labs and research groups with deployment timelines.
 
 Email: data@corelathe.com
