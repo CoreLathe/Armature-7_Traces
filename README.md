@@ -54,4 +54,5 @@ Structural property preservation is validated across domain translations. Genera
 
 We work with teams training process reward models who need data documenting how reasoning catches itself under constraint. Current focus: production-grade error detection verifiers. Inquiries welcome from industry labs and research groups with deployment timelines.
 
+Website: CoreLathe.com
 Email: data@corelathe.com
